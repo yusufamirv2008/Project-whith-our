@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.relative {
+  position: relative;
+}
+
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -635,10 +643,6 @@ video {
   height: 50px;
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
 .w-\[20px\] {
   width: 20px;
 }
@@ -653,6 +657,10 @@ video {
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-\[1200px\] {
+  max-width: 1200px;
 }
 
 .flex-1 {
@@ -707,12 +715,20 @@ video {
   gap: 2rem;
 }
 
-.gap-\[20px\] {
-  gap: 20px;
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .gap-\[15px\] {
   gap: 15px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -741,9 +757,18 @@ video {
   border-width: 2px;
 }
 
+.border-solid {
+  border-style: solid;
+}
+
 .border-\[\#ff3f3a\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 63 58 / var(--tw-border-opacity, 1));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .border-orange-600 {
@@ -761,6 +786,11 @@ video {
   background-color: rgb(247 94 5 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#FF3F3A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 63 58 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#ff3f3a\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 63 58 / var(--tw-bg-opacity, 1));
@@ -769,6 +799,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
 .bg-orange-500 {
@@ -786,16 +821,6 @@ video {
   background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
@@ -806,9 +831,9 @@ video {
   background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-800 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-b {
@@ -845,6 +870,10 @@ video {
   padding: 10px;
 }
 
+.p-\[20px\] {
+  padding: 20px;
+}
+
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -873,6 +902,11 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .py-1 {
@@ -905,16 +939,17 @@ video {
   padding-bottom: 2rem;
 }
 
-.pl-\[20px\] {
-  padding-left: 20px;
-}
-
-.pt-\[30px\] {
-  padding-top: 30px;
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pt-\[100px\] {
   padding-top: 100px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
 }
 
 .text-center {
@@ -950,6 +985,10 @@ video {
   line-height: 1;
 }
 
+.text-\[25px\] {
+  font-size: 25px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -983,6 +1022,11 @@ video {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-\[\#FF3F3A\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 63 58 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#ff3f3a\] {
@@ -1056,12 +1100,20 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mt-\[50px\] {
+    margin-top: 50px;
   }
 
   .lg\:block {
@@ -1076,12 +1128,20 @@ video {
     height: 300px;
   }
 
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
   .lg\:h-\[470px\] {
     height: 470px;
   }
 
-  .lg\:h-\[400px\] {
-    height: 400px;
+  .lg\:w-\[1020px\] {
+    width: 1020px;
+  }
+
+  .lg\:w-\[150px\] {
+    width: 150px;
   }
 
   .lg\:w-\[270px\] {
@@ -1090,6 +1150,10 @@ video {
 
   .lg\:w-\[280px\] {
     width: 280px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
   }
 
   .lg\:w-\[500px\] {
@@ -1108,19 +1172,19 @@ video {
     width: 700px;
   }
 
-  .lg\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .lg\:w-\[150px\] {
-    width: 150px;
-  }
-
   .lg\:pl-\[20px\] {
     padding-left: 20px;
   }
 
   .lg\:text-start {
     text-align: start;
+  }
+
+  .lg\:text-\[46px\] {
+    font-size: 46px;
+  }
+
+  .lg\:font-bold {
+    font-weight: 700;
   }
 }
