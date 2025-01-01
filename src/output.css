@@ -629,6 +629,10 @@ video {
   margin-top: 30px;
 }
 
+.mt-\[31px\] {
+  margin-top: 31px;
+}
+
 .flex {
   display: flex;
 }
